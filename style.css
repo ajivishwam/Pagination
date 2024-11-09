@@ -1,0 +1,80 @@
+.container {
+    width: 1180px;
+    padding: 10px;
+    position: relative;
+    /* margin: 0 auto; */
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+thead {
+    color: #fff;
+    background-color: grey;
+}
+
+thead th {
+    padding: 11px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(odd) {
+    background: lightblue;
+}
+
+tbody tr td {
+    padding: 10px;
+}
+
+.page {
+    width: 70%;
+    text-decoration: none;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+}
+
+.pagination li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid grey;
+    color: darkblue;
+}
+
+.pagination li a:hover {
+    background-color: lightgray;
+}
+
+.pagination li.active a {
+    background-color: lightslategray;
+}
+
+.pagination .page-item.prev a {
+    border-radius: 5px 0 0 5px;
+}
+
+.pagination .page-item.next a {
+    border-radius: 0 5px 5px 0;
+}
+
+.pagination .pageTotal {
+    border: 1px solid #cdcbcb;
+    padding: 6px;
+}
+
+.pageTotal i {
+    font-style: normal;
+}
